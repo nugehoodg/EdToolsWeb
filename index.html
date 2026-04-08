@@ -45,7 +45,7 @@
       <div class="animate-fade-in-down navbar-end gap-2">
         <a
           target="_blank"
-          href="https://tally.so/r/ob7bKN"
+          href="#access"
           class="btn btn-success btn-sm lg:btn-md"
         >
           Get Early Access
@@ -145,11 +145,7 @@
             worksheets, and teaching activity ideas instantly.
           </p>
 
-          <a
-            target="_blank"
-            href="https://tally.so/r/ob7bKN"
-            class="btn btn-success"
-          >
+          <a target="_blank" href="#access" class="btn btn-success">
             Get Early Access
           </a>
         </div>
@@ -529,29 +525,45 @@
       </div>
     </section>
 
-    <section class="py-20 bg-neutral-100">
+    <section id="access" class="font-sans py-20 bg-neutral-100">
       <div class="max-w-5xl mx-auto px-6">
-        <div
-          class="rounded-3xl bg-gradient-to-r from-success to-fuchsia-500 text-white py-16 px-10 text-center"
-        >
-          <h2 class="text-4xl md:text-5xl font-bold mb-6">
-            Help shape the future of teaching tools
-          </h2>
-
-          <p class="text-lg md:text-xl opacity-90 mb-10 max-w-2xl mx-auto">
-            Teachers and educators are invited to test EduTools AI and explore
-            faster ways to create SOPs, lesson plans, teaching modules, and
-            classroom materials.
-          </p>
-
-          <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              target="_blank"
-              href="https://tally.so/r/ob7bKN"
-              class="btn bg-white text-blue-700 border-none hover:bg-gray-100 px-8"
-            >
-              Test the App
-            </a>
+        <div class="bg-success collapse">
+          <input type="checkbox" />
+          <div class="collapse-title text-center">
+            <h1 class="text-xl text-neutral-50">CLICK TO REGISTER NOW!</h1>
+          </div>
+          <div class="collapse-content bg-neutral-100">
+            <iframe
+              data-tally-src="https://tally.so/embed/ob7bKN?alignLeft=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="1577"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Test EduTools AI – Early Access for Educators"
+            ></iframe>
+            <script>
+              var d = document,
+                w = "https://tally.so/widgets/embed.js",
+                v = function () {
+                  "undefined" != typeof Tally
+                    ? Tally.loadEmbeds()
+                    : d
+                        .querySelectorAll("iframe[data-tally-src]:not([src])")
+                        .forEach(function (e) {
+                          e.src = e.dataset.tallySrc;
+                        });
+                };
+              if ("undefined" != typeof Tally) v();
+              else if (d.querySelector('script[src="' + w + '"]') == null) {
+                var s = d.createElement("script");
+                ((s.src = w),
+                  (s.onload = v),
+                  (s.onerror = v),
+                  d.body.appendChild(s));
+              }
+            </script>
           </div>
         </div>
       </div>
